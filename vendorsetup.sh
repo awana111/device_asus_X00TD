@@ -9,11 +9,11 @@ git clone --depth=1 --recursive https://github.com/Tiktodz/android_kernel_asus_s
 
 # Clone common tree
 rm -rf device/asus/sdm660-common
-git clone --depth=1 https://github.com/strongreasons/device_asus_sdm660-common -b v2 device/asus/sdm660-common
+git clone --depth=1 https://github.com/Tiktodz/android_device_asus_sdm660-common-4.19 -b infinityx device/asus/sdm660-common
 
 # Clone vendor tree
 rm -rf vendor/asus
-git clone --depth=1 https://github.com/Tiktodz/proprietary_vendor_asus-4.19 -b 15.0 vendor/asus
+git clone --depth=1 https://github.com/Tiktodz/proprietary_vendor_asus-4.19 -b infinityx vendor/asus
 
 # Clone vibrator
 rm -rf vendor/qcom/opensource/vibrator
