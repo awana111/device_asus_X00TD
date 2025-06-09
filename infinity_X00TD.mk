@@ -7,7 +7,6 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Inherit some common Infinity-X stuff.
 $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
@@ -16,14 +15,16 @@ $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Infinity-X stuff.
+BYPASS_CHARGE_SUPPORTED := true
 INFINITY_BUILD_TYPE := UNOFFICIAL
 INFINITY_MAINTAINER := qǝuʞz
 TARGET_BUILD_DEVICE_AS_WEBCAM := true
 TARGET_BUILD_GOOGLE_TELEPHONY := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SHIPS_FULL_GAPPS := false
 TARGET_SHIPS_GOOGLE_DIALER := false
 TARGET_SUPPORTS_CALL_RECORDING := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
 USE_MOTO_CALCULATOR := true
 WITH_GAPPS := false
 
