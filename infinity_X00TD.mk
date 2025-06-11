@@ -28,10 +28,6 @@ TARGET_SUPPORTS_QUICK_TAP := true
 USE_MOTO_CALCULATOR := true
 WITH_GAPPS := false
 
-# Inherit some common device props
-SYSTEM_OPTIMIZE_JAVA := true
-SYSTEMUI_OPTIMIZE_JAVA := true
-
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := infinity_X00TD
 PRODUCT_DEVICE := X00TD
