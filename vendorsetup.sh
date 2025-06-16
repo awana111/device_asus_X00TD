@@ -5,15 +5,15 @@ export TZ="Asia/Jakarta"
 
 # Clone kernel tree
 rm -rf kernel/asus/sdm660
-git clone --depth=1 --recursive https://github.com/Tiktodz/android_kernel_asus_sdm660 -b stable kernel/asus/sdm660
+git clone --depth=1 --recursive https://github.com/Tiktodz/android_kernel_asus_sdm660 -b repart kernel/asus/sdm660
 
 # Clone common tree
 rm -rf device/asus/sdm660-common
-git clone --depth=1 https://github.com/Kneba/device_asus_sdm660-common -b qpr2 device/asus/sdm660-common
+git clone --depth=1 https://github.com/Kneba/device_asus_sdm660-common -b repart device/asus/sdm660-common
 
 # Clone vendor tree
 rm -rf vendor/asus
-git clone --depth=1 https://github.com/Kneba/proprietary_vendor_asus -b qpr2 vendor/asus
+git clone --depth=1 https://github.com/Kneba/proprietary_vendor_asus -b repart vendor/asus
 
 # Clone keys
 rm -rf vendor/lineage-priv/keys
