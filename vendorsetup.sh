@@ -5,7 +5,7 @@ export TZ="Asia/Jakarta"
 
 # Clone kernel tree
 rm -rf kernel/asus/sdm660
-git clone --depth=1 https://github.com/SonicBSV/android_kernel_asus_sdm660-4.19 kernel/asus/sdm660
+git clone --depth=1 --recursive https://github.com/Tiktodz/android_kernel_asus_sdm660 -b repart2 kernel/asus/sdm660
 
 # Clone common tree
 rm -rf device/asus/sdm660-common
