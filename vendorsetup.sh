@@ -9,11 +9,11 @@ git clone --depth=1 https://github.com/SonicBSV/android_kernel_asus_sdm660-4.19 
 
 # Clone common tree
 rm -rf device/asus/sdm660-common
-git clone --depth=1 https://github.com/Kneba/device_asus_sdm660-common -b newpart device/asus/sdm660-common
+git clone --depth=1 https://github.com/Kneba/device_asus_sdm660-common -b aosp device/asus/sdm660-common
 
 # Clone vendor tree
 rm -rf vendor/asus
-git clone --depth=1 https://github.com/Kneba/proprietary_vendor_asus -b newpart vendor/asus
+git clone --depth=1 https://github.com/Kneba/proprietary_vendor_asus -b aosp vendor/asus
 
 # Clone keys
 rm -rf vendor/lineage-priv/keys
