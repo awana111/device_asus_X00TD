@@ -12,6 +12,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Inherit some common Infinity-X stuff.
 $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
+TARGET_BOOT_ANIMATION_RES := 1080
+
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
@@ -32,6 +34,7 @@ TARGET_SHIPS_GOOGLE_DIALER := false
 WITH_GAPPS := false
 
 # Inherit some common device props
+FULL_SYSTEM_OPTIMIZE_JAVA := true
 SYSTEM_OPTIMIZE_JAVA := true
 SYSTEMUI_OPTIMIZE_JAVA := true
 
