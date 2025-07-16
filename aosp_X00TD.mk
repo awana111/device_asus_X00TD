@@ -13,8 +13,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Custom flags.
-CUSTOM_BUILD_TYPE := UNOFFICIAL
-CUSTOM_MAINTAINER := Tokodepia
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit from X00TD device
