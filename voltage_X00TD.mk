@@ -14,6 +14,7 @@ $(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 
 # Custom flags.
 TARGET_BOOT_ANIMATION_RES := 1080
+VOLTAGE_BUILD_TYPE := UNOFFICIAL
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
