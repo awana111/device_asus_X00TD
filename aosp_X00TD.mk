@@ -9,12 +9,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common crDroid stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common VoltageOS stuff
+$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 
 # Custom flags.
-CUSTOM_BUILD_TYPE := UNOFFICIAL
-CUSTOM_MAINTAINER := Tokodepia
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit from X00TD device
@@ -26,7 +24,7 @@ SYSTEM_OPTIMIZE_JAVA := true
 SYSTEMUI_OPTIMIZE_JAVA := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_X00TD
+PRODUCT_NAME := voltage_X00TD
 PRODUCT_DEVICE := X00TD
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := Zenfone Max Pro M1
